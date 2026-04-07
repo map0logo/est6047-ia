@@ -1,0 +1,41 @@
+---
+config:
+  layout: elk
+  theme: redux
+  look: neo
+---
+flowchart LR
+ subgraph s2["❄️ Ciclos de entusiasmo y retroceso (1974–1993)"]
+    direction TD
+        C["⚠️ Primer invierno (1974–1980)<br>Falta de potencia computacional<br>Críticas de Minsky &amp; Papert al perceptrón"]
+        D["📚 Sistemas expertos (1980–1987)<br>Reglas y conocimiento específico<br>Éxito en dominios acotados"]
+        E["⚠️ Segundo invierno (1987–1993)<br>Mantenimiento costoso<br>Limitaciones de los sistemas expertos"]
+  end
+ subgraph s3["🚀 Era moderna (2010–actualidad)"]
+    direction TD
+        H["🎨 IA Generativa (2020–hoy)<br>Modelos de lenguaje (LLMs), difusión<br>Agentes autónomos (OpenClaw, etc.)"]
+        G["⚙️ Deep Learning (2012–2020)<br>GPU, Big Data, ImageNet<br>AlexNet revoluciona visión artificial"]
+  end
+    B["✨ Época dorada (1956–1974)<br>Resolución general de problemas<br>Perceptrones, primeros programas"] --> s2
+    C --> D
+    D --> E
+    G --> H
+    s2 --> F["📈 Renacimiento estadístico (1990s–2010)<br>Redes bayesianas, Máquinas de Vectores Soporte (SVM)<br>Aprendizaje automático probabilístico"]
+    F --> s3
+
+     C:::Rose
+     D:::Aqua
+     E:::Rose
+     H:::Sky
+     G:::Sky
+     B:::Ash
+     F:::Peach
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
+    classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
+    style B color:#000000
+    style s2 fill:#fef2f2,stroke:#ef4444,stroke-width:2px
+    style F fill:transparent,color:#000000
+    style s3 fill:#faf5ff,stroke:#8b5cf6,stroke-width:2px

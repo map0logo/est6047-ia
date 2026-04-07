@@ -1,0 +1,18 @@
+---
+config:
+  layout: dagre
+---
+graph TD
+    A[Reflejo Simple] --> B[Reflejo con Estado]
+    B --> C[Basado en Objetivos]
+    C --> D[Basado en Utilidad]
+    D --> E[Agente que Aprende]
+    
+    A -.->|Sin memoria| A
+    B -.->|Memoria| B
+    C -.->|Planificación| C
+    D -.->|Optimización| D
+    E -.->|ML/DL| E
+    
+    style A fill:#f96,stroke:#333
+    style E fill:#9f9,stroke:#333,stroke-width:3px
