@@ -3,5 +3,8 @@ name = "est6047-ia"
 version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.4",
     "quarto-cli>=1.9.36",
+    "torch>=2.11.0",
 ]
