@@ -1,0 +1,31 @@
+---
+config:
+  layout: dagre
+  theme: redux
+---
+flowchart TB
+    A["Inicializar w = 0"] --> B["Para cada muestra de entrenamiento"]
+    B --> C["Calcular predicción y = signo(wᵀ f(x))"]
+    C --> D{"¿y == y*?"}
+    D -- Sí --> E["No actualizar"]
+    D -- No --> F["Actualizar: w = w + y* f(x)"]
+    E --> G["¿Siguiente muestra?"]
+    F --> G
+    G -- Sí --> B
+    G -- No --> H["¿Hubo actualizaciones en una pasada completa?"]
+    H -- Sí --> B
+    H -- No --> I["Terminar"]
+
+     A:::Ash
+     B:::Peach
+     C:::Peach
+     D:::Sky
+     E:::Peach
+     F:::Peach
+     G:::Peach
+     H:::Peach
+     I:::Rose
+    classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
+    classDef Peach stroke-width:1px, stroke-dasharray:none, stroke:#FBB35A, fill:#FFEFDB, color:#8F632D
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C

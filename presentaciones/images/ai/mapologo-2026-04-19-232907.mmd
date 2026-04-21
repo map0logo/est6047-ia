@@ -1,0 +1,34 @@
+---
+config:
+  layout: dagre
+---
+flowchart LR
+ subgraph Entrada["Entrada"]
+        V["Velocidad"]
+        T["Terreno"]
+        G["Visión"]
+        E["Experiencia"]
+  end
+ subgraph Oculta["Oculta"]
+        H1["H1"]
+        H2["H2"]
+        H3["H3"]
+        H4["H4"]
+        H5["H5"]
+  end
+ subgraph Salida["Salida"]
+        S["Colisión"]
+  end
+    V ----> H1 & H2 & H3 & H4 & H5
+    T ----> H1 & H2 & H3 & H4 & H5
+    G ----> H1 & H2 & H3 & H4 & H5
+    E ----> H1 & H2 & H3 & H4 & H5
+    H1 ----> S
+    H2 ----> S
+    H3 ----> S
+    H4 ----> S
+    H5 ----> S
+
+    style Entrada stroke:transparent,fill:#C8E6C9
+    style Oculta stroke:transparent,fill:#BBDEFB
+    style Salida stroke:transparent,fill:#FFCDD2

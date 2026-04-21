@@ -1,0 +1,17 @@
+---
+config:
+  layout: elk
+---
+flowchart LR
+    A["Datos etiquetados"] --> B["Algoritmo Perceptrón"]
+    B --> C["Vector de pesos w"]
+    C --> D["Clasificador lineal"]
+
+     A:::Ash
+     B:::Sky
+     C:::Aqua
+     D:::Rose
+    classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    classDef Rose stroke-width:1px, stroke-dasharray:none, stroke:#FF5978, fill:#FFDFE5, color:#8E2236

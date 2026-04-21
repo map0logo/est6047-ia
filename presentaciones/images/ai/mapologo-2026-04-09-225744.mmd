@@ -1,0 +1,22 @@
+flowchart TB
+ subgraph subGraph1["Con sesgo"]
+    direction TD
+        D["w₀ x 1 + w₁ x f₁ + ... = 0"]
+        C["f(x) con 1 al inicio"]
+  end
+ subgraph subGraph0["Sin sesgo"]
+    direction TD
+        B["wᵀ f(x) = 0"]
+        A["f(x)"]
+  end
+    A --> B
+    C --> D
+
+     D:::Aqua
+     C:::Sky
+     B:::Aqua
+     A:::Sky
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    style subGraph0 stroke:#378E7A
+    style subGraph1 stroke:#378E7A

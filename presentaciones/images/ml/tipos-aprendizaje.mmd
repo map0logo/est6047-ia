@@ -1,0 +1,17 @@
+---
+config:
+  layout: elk
+  theme: default
+  look: neo
+---
+flowchart TB
+ subgraph Fuentes["Fuentes de Incertidumbre"]
+    direction TB
+        F1["Ruido en Mediciones<br>Ej: Sensores"]
+        F2["Ambigüedad en Observaciones<br>Ej: Clasificación de Píxeles"]
+        F3["Variabilidad Natural<br>Ej: Comportamiento de Usuarios"]
+        F4["Información Incompleta<br>Datos Faltantes"]
+  end
+    Incertidumbre["Incertidumbre en Datos Reales"] --> Fuentes
+    Fuentes --> ModeladoProb["Modelado Probabilístico"]
+    ModeladoProb --> Decisiones["Decisiones Informadas"]

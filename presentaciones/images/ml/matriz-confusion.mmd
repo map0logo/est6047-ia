@@ -1,0 +1,24 @@
+---
+config:
+  theme: neo
+  quadrantChart:
+    chartWidth: 600
+    chartHeight: 400
+  themeVariables:
+    quadrant1TextFill: "#336633"
+    quadrant2TextFill: " #336633"
+    quadrant3TextFill: "#663333"
+    quadrant4TextFill: "#663333"
+    quadrant1Fill: "#FFDDDD"
+    quadrant2Fill: " #DDFFDD"
+    quadrant3Fill: "#DDFFDD"
+    quadrant4Fill: "#FFDDDD"
+---
+quadrantChart
+    title Matriz de Confusión
+    x-axis "Predicción: Positivo" --> "Negativo"
+    y-axis "Realidad: Falso" --> "Verdadero"
+    quadrant-1 "Falsos Negativos (FN)"
+    quadrant-2 "Verdaderos Positivos (VP)"
+    quadrant-3 "Falsos Positivos (FP)"
+    quadrant-4 "Verdaderos Negativos (VN)"

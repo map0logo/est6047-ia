@@ -1,0 +1,24 @@
+---
+config:
+  theme: redux
+  layout: dagre
+---
+flowchart TB
+    A["Machine Learning"] --> B["Aprendizaje Supervisado"] & C["Aprendizaje No Supervisado"] & D["Aprendizaje por Refuerzo"]
+    B --> E["Regresión"] & F["Clasificación"]
+    C --> G["Clustering"] & H["Reducción de dimensionalidad"]
+    D --> I["Agente - Entorno"]
+
+     A:::Ash
+     B:::Sky
+     C:::Sky
+     D:::Sky
+     E:::Aqua
+     F:::Aqua
+     G:::Aqua
+     H:::Aqua
+     I:::Aqua
+    classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
+    classDef Sky stroke-width:1px, stroke-dasharray:none, stroke:#374D7C, fill:#E2EBFF, color:#374D7C
+    classDef Aqua stroke-width:1px, stroke-dasharray:none, stroke:#46EDC8, fill:#DEFFF8, color:#378E7A
+    style A font-size:18px
