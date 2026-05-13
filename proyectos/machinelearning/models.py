@@ -40,8 +40,8 @@ class PerceptronModel(Module):
         Hint: You can use ones(dim) to create a tensor of dimension dim.
         """
         super(PerceptronModel, self).__init__()
-
-        "*** YOUR CODE HERE ***"
+        print(dimensions)
+        self.w = Parameter(ones(1, dimensions))
 
 
     def get_weights(self):
@@ -60,7 +60,8 @@ class PerceptronModel(Module):
 
         The pytorch function `tensordot` may be helpful here.
         """
-        "*** YOUR CODE HERE ***"
+
+        return tensordot(self.w, x)
 
         
 
@@ -71,8 +72,7 @@ class PerceptronModel(Module):
         Returns: 1 or -1
         """
         score = self(x)
-
-        "*** YOUR CODE HERE ***"
+        return 1. if score >= 0 else -1.
 
 
 
